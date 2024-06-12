@@ -29,10 +29,12 @@ body {
     z-index: 1;
 }
 
+
 .intro {
     height: 100vh;
     scroll-snap-align: start;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -40,17 +42,16 @@ body {
     position: relative;
     z-index: 1;
     overflow: hidden;
-    flex-direction: column;
     width: 100%;
+    
 }
 
 .intro p{
-    position: relative;
-    text-align: center;
-    z-index: 2;
-    background-color: none;
-    font-family: "Pacifico"; 
-    font-size: 2em; 
+    font-family: "Pacifico", cursive; /* Applying the Pacifico font to the paragraph */
+    font-size: 1.5em; /* Adjust the size as needed */
+    margin: 0; /* Remove any default margin */
+    text-align: left; /* Left-align paragraph text */
+    flex: 1; /* Allow paragraph to take up available space */
     color: #4CAF50;
 }
 
@@ -70,7 +71,7 @@ body {
 .clouds1 {
     width: 100%;
     height: auto;
-    background-image: url('Clouds1.png'); 
+    background-image: url('/Clouds1.png'); 
     background-repeat: no-repeat;
     background-size: contain;
     animation: moveClouds 30s linear infinite;
@@ -88,7 +89,7 @@ body {
 .clouds2 {
     width: 100%;
     height: auto;
-    background-image: url('Clouds3.png'); 
+    background-image: url('/Clouds3.png'); 
     background-repeat: no-repeat;
     background-size: contain;
     animation: moveClouds 30s linear infinite;
@@ -110,9 +111,42 @@ body {
     font-family: "Arial", sans-serif; 
     font-size: 1em;
     transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-    z-index: 2;
+    z-index: 1;
 }
 
 .catalogue-btn:hover {
     background-color: #ff66b3; 
+}
+
+.catalogue-btn:active {
+    background-color: #d23785;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Optional: limit the width of the content */
+    gap: 20px; /* Optional: space between the paragraph and button */
+}
+
+.p-container {
+    flex: 2; /* Allow text container to take up available space */
+    font-family: "Pacifico", cursive; /* Applying the Pacifico font to the paragraph */
+    font-size: 1.2em; /* Adjust the size as needed */
+    margin: 0; /* Remove any default margin */
+    text-align: left; /* Left-align paragraph text */
+    padding: 40px 10px;
+    z-index: 1;
+}
+
+.btn-container {
+    flex-shrink: 0; /* Prevent button container from shrinking */
+    padding: 0px 30px;
+    z-index: 1;
+    padding: 50px 30px;
+    font-size: 30px;
 }

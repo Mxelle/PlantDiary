@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Diary</title>
+    <link rel="stylesheet" href="catalogue.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="clouds-container">
+            <div class="clouds2"></div>
+            <div class="clouds2"></div>
+        </div>
+        <div class="title-btn-container" onclick="plantDiaryClicked()">
+            <button type="button" class="title-btn pacifico-regular" >Plant Diary</button>
+        </div>
+        <div class="title-container">
+            <h1 class="pacifico-regular">Catalogue</h1>
+        </div>
+        <div class="hover-btn-container">
+            <!-- <button type="button" class="main-btn">Main Button</button> -->
+            <div class="main-btn">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div id="dropdown" class="dropdown-content">
+                <button type="button" class="dropdown-btn" onclick="navigateTo('page1.html')">Button 1</button>
+                <button type="button" class="dropdown-btn" onclick="navigateTo('page2.html')">Button 2</button>
+            </div>
+        </div>
+        <div class="letters-bar">
+            <button type="button" class="letter" onclick="filterPlants('A')">A</button>
+            <button type="button" class="letter" onclick="filterPlants('A')">B</button>
+            <button type="button" class="letter" onclick="filterPlants('A')">C</button>
+            <button type="button" class="letter" onclick="filterPlants('A')">D</button>
+            <button type="button" class="letter" onclick="filterPlants('A')">E</button>
+            <button type="button" class="letter" onclick="filterPlants('A')">F</button>
+            <button type="button" class="letter" onclick="filterPlants('A')">G</button>
+            <button type="button" class="letter" onclick="filterPlants('A')">H</button>
+            <button type="button" class="letter" onclick="filterPlants('A')">I</button>
+            <button type="button" class="letter" onclick="filterPlants('A')">J</button>
+            <button type="button" class="letter" onclick="filterPlants('A')">K</button>
+            <button type="button" class="letter" onclick="filterPlants('A')">L</button>
+            <button type="button" class="letter" onclick="filterPlants('A')">M</button>
+            <button type="button" class="letter" onclick="filterPlants('A')">N</button>
+            <button type="button" class="letter" onclick="filterPlants('A')">O</button>
+            <button type="button" class="letter" onclick="filterPlants('A')">P</button>
+            <button type="button" class="letter" onclick="filterPlants('A')">Q</button>
+            <button type="button" class="letter" onclick="filterPlants('A')">R</button>
+            <button type="button" class="letter" onclick="filterPlants('A')">S</button>
+            <button type="button" class="letter" onclick="filterPlants('A')">T</button>
+            <button type="button" class="letter" onclick="filterPlants('A')">U</button>
+            <button type="button" class="letter" onclick="filterPlants('A')">V</button>
+            <button type="button" class="letter" onclick="filterPlants('A')">W</button>
+            <button type="button" class="letter" onclick="filterPlants('A')">X</button>
+            <button type="button" class="letter" onclick="filterPlants('A')">Y</button>
+            <button type="button" class="letter" onclick="filterPlants('A')">Z</button>
+        </div>
+        <ul class="plant-list" id="plantList"></ul>
+    <script src="catalogue.js"></script>
+</body>
+</html>
