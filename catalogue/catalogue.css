@@ -72,7 +72,7 @@ h1.pacifico-regular {
     align-items: center;
     width: 15vh;
     position: fixed;
-    top: 20px; /* Adjust the top distance as needed */
+    top: 20px; 
     right: 20px;
     z-index: 1;
 }
@@ -94,22 +94,22 @@ h1.pacifico-regular {
     display: inline-block;
     position: absolute;
     top: calc(100% + 50px);
-    /* left: 0; */
     width: 100%;
     border-radius: 0 0 5px 5px;
     overflow: hidden;
-    transition: max-height 1s ease-in; /* Adding ease-in transition */
+    transition: max-height 1s ease-in; 
     max-height: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .dropdown-content.show {
     display: block;
-    max-height: 200px; /* Adjust max-height as needed */
+    max-height: 200px; 
 }
 
 .dropdown-btn {
     border-top: 1px solid #ffffff;
+    z-index: 2;
 }
 
 .dropdown-btn:first-child {
@@ -123,7 +123,7 @@ h1.pacifico-regular {
 
 .letters-bar {
     position: fixed;
-    top: 100px; 
+    top: 150px; 
     left: 50%; 
     transform: translateX(-50%);
     display: flex;
@@ -131,7 +131,7 @@ h1.pacifico-regular {
     background-color: rgba(255, 255, 255, 0.3); 
     padding: 10px;
     border-radius: 9px;
-    z-index: 2; 
+    z-index: 1; 
 }
 
 .letter {
@@ -144,18 +144,33 @@ h1.pacifico-regular {
 }
 
 .plant-list {
-    position:fixed;
-    list-style-type: disc; 
+    position: fixed;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    list-style-type: none; 
     padding-left: 20px; 
-    top: 50%;
+    top: 40%;
     left: 10%;
     margin: 0;
-    background-color: rgba(255, 255, 255, 0.9); 
+    background-color: rgba(255, 255, 255, 0.3); 
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
-    max-width: 400px; 
- 
+}
+
+.plant-item {
+    margin: 0; /* Remove margin, managed by grid gap */
+}
+
+.plant-btn {
+    font-size: 25px;
+    display: inline-block;
+    background-color: inherit;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left; 
 }
 
 .clouds-container {
