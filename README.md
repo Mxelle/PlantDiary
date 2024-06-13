@@ -1,1 +1,2 @@
-Simple web diary for plant for a university course# Project
+Simple web diary used for storing information about one's plants.
+University project.
