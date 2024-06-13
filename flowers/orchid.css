@@ -1,0 +1,301 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+    background: linear-gradient(to bottom, #eea6dc, #f6cdec);
+    height: 100vh;
+    width: 100%;
+}
+
+h1.pacifico-regular {
+    font-size: 3em;
+    color: #4CAF50;
+    font-family: "Pacifico", cursive;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    position: relative;
+    z-index: 1;
+    }
+    
+.title-btn.pacifico-regular {
+    font-size: 2em;
+    color: #4CAF50;
+    font-family: "Pacifico", cursive;
+}
+
+.title-btn-container {
+    position: absolute;
+    width: 230px;
+    text-align: center; 
+    z-index: 2;
+}
+
+.title-btn {
+    border: none;
+    background-color: inherit;
+    padding: 5px 20px;
+    cursor: pointer;
+    display: flex;
+    width: auto;
+    z-index: 2;
+}
+
+.main-btn {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.line {
+    height: 5px;
+    background-color: #4CAF50;
+    border-radius: 2px;
+    transition: transform 1s ease-in;
+}
+
+.hover-btn-container {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 15vh;
+    position: fixed;
+    top: 20px; 
+    right: 20px;
+    z-index: 3;
+}
+
+.dropdown-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.dropdown-content {
+    display: inline-block;
+    position: absolute;
+    top: calc(100% + 50px);
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+    transition: max-height 1s ease-in; 
+    max-height: 0;
+    z-index: 2;
+}
+
+.dropdown-content.show {
+    display: block;
+    max-height: 200px; 
+}
+
+.dropdown-btn {
+    border-top: 1px solid #ffffff;
+    z-index: 2;
+}
+
+.dropdown-btn:first-child {
+    border-top: none;
+}
+
+.hover-btn-container:hover .dropdown-content {
+    display: block;
+    max-height: 200px;
+}
+
+.clouds-container {
+    position: fixed;
+    top: 83.5%;
+    left: 0;
+    width: 200%;
+    height: 200%; 
+    transform: translateY(-50%);
+    display: flex;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.clouds2 {
+    width: 100%;
+    height: auto;
+    background-image: url('/Clouds3.png'); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: moveClouds 30s linear infinite;
+}
+
+@keyframes moveClouds {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* 
+.orchid-container {
+    position: relative;
+    display: flex;
+    max-width: 800px;
+
+    
+    margin: 50px auto;
+    padding: 20px;
+    background-color: inherit;
+}
+
+.orchid-image {
+    flex: 0 0 auto; 
+    margin-right: 20px;
+    overflow: hidden;
+    overflow: hidden;
+}
+
+.orchid-image img {
+    position: fixed;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: auto;
+} */
+
+.all-info-container {
+    display: flex;
+    position: inherit;
+    justify-content: space-between; /* Adjust as needed */
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.watering-info-container {
+    position: relative;
+    max-width: 600px;
+    height: 100%;
+    width: 600px;
+    margin: 0 20px;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(245, 140, 194, 0.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+    color: #2b812e;
+    list-style: circle;
+}
+
+.add-watering {
+    margin-top: 10px;
+}
+
+.add-watering input[type="text"] {
+    border: none;
+    border-radius: 7px;
+    padding: 8px;
+    width: 70%;
+    margin-right: 10px;
+}
+
+.add-btn {
+    background-color: #aac5ab;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+h2 {     
+    align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+h2.pacifico-regular{
+    font-size: 2em;
+    color: #2b812e;
+    font-family: "Pacifico", cursive;
+}
+
+.calendar {
+    width: 250px; /* Adjust width as needed */
+    max-height: calc(100vh - 100px);
+    padding: 20px;
+    background-color: rgba(245, 140, 194, 0.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 600px;
+    margin-top: 40px;
+}
+
+.month {
+    font-size: 2em;
+    color: #2b812e;
+    font-family: "Pacifico", cursive;
+    text-align: center;
+}
+
+.days-letters {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+.june-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    width: 400px;
+    width: 544px;
+    overflow: hidden;
+}
+
+.day {
+    display: grid;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.day:hover {
+    background-color: #c5e1a5; /* Light green on hover */
+}
+
+.day.active {
+    background-color: #4caf50; /* Green when active */
+    color: #fff;
+}
