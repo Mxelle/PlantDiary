@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Diary</title>
+    <link rel="stylesheet" href="orchid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="clouds-container">
+        <div class="clouds2"></div>
+        <div class="clouds2"></div>
+    </div>
+    <div class="title-btn-container" onclick="plantDiaryClicked()">
+        <button type="button" class="title-btn pacifico-regular" >Plant Diary</button>
+    </div>
+    <div class="title-container">
+        <h1 class="pacifico-regular">Orchid</h1>
+    </div>
+    <div class="hover-btn-container">
+        <div class="main-btn">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div id="dropdown" class="dropdown-content">
+            <button type="button" class="dropdown-btn" onclick="navigateTo('/catalogue/catalogue.html')">Catalogue</button>
+            <button type="button" class="dropdown-btn" onclick="navigateTo('/homepage/homepage.html')">Home</button>
+        </div>
+    </div>
+    <div class="all-info-container">
+        <div class="watering-info-container">
+            <h2 class="pacifico-regular">Watering</h2>
+            <ul id="watering-list">
+                <li>Water when the roots are gray in color</li>
+                <li>Use lukewarm water</li>
+            </ul>
+            <div class="add-watering">
+                <input type="text" id="new-watering" placeholder="Add new watering info">
+                <button type="button" class="add-btn" onclick="addWatering()">Add</button>
+            </div>
+        </div>
+        
+            <!-- Calendar Section -->
+        <div class="calendar">
+            <div class="month">
+                <h3>Watering Schedule - June</h3>
+            </div>
+            <div class="days-letters">
+                <div class="letter">M</div>
+                <div class="letter">T</div>
+                <div class="letter">W</div>
+                <div class="letter">T</div>
+                <div class="letter">F</div>
+                <div class="letter">S</div>
+                <div class="letter">S</div>
+            </div>
+            <div class="june-days">
+                <!-- Days of June 2024 -->
+                <div class="day" onclick="toggleDay(this)"> </div>
+                <div class="day" onclick="toggleDay(this)"> </div>
+                <div class="day" onclick="toggleDay(this)"> </div>
+                <div class="day" onclick="toggleDay(this)"> </div>
+                <div class="day" onclick="toggleDay(this)"> </div>
+                <div class="day" onclick="toggleDay(this)">1</div>
+                <div class="day" onclick="toggleDay(this)">2</div>
+                <div class="day" onclick="toggleDay(this)">3</div>
+                <div class="day" onclick="toggleDay(this)">4</div>
+                <div class="day" onclick="toggleDay(this)">5</div>
+                <div class="day" onclick="toggleDay(this)">6</div>
+                <div class="day" onclick="toggleDay(this)">7</div>
+                <div class="day" onclick="toggleDay(this)">8</div>
+                <div class="day" onclick="toggleDay(this)">9</div>
+                <div class="day" onclick="toggleDay(this)">10</div>
+                <div class="day" onclick="toggleDay(this)">11</div>
+                <div class="day" onclick="toggleDay(this)">12</div>
+                <div class="day" onclick="toggleDay(this)">13</div>
+                <div class="day" onclick="toggleDay(this)">14</div>
+                <div class="day" onclick="toggleDay(this)">15</div>
+                <div class="day" onclick="toggleDay(this)">16</div>
+                <div class="day" onclick="toggleDay(this)">17</div>
+                <div class="day" onclick="toggleDay(this)">18</div>
+                <div class="day" onclick="toggleDay(this)">19</div>
+                <div class="day" onclick="toggleDay(this)">20</div>
+                <div class="day" onclick="toggleDay(this)">21</div>
+                <div class="day" onclick="toggleDay(this)">22</div>
+                <div class="day" onclick="toggleDay(this)">23</div>
+                <div class="day" onclick="toggleDay(this)">24</div>
+                <div class="day" onclick="toggleDay(this)">25</div>
+                <div class="day" onclick="toggleDay(this)">26</div>
+                <div class="day" onclick="toggleDay(this)">27</div>
+                <div class="day" onclick="toggleDay(this)">28</div>
+                <div class="day" onclick="toggleDay(this)">29</div>
+                <div class="day" onclick="toggleDay(this)">30</div>
+            </div>
+        </div>
+    </div>
+    <script src="orchid.js"></script>
+</body>
+</html>
