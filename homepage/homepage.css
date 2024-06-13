@@ -47,11 +47,11 @@ body {
 }
 
 .intro p{
-    font-family: "Pacifico", cursive; /* Applying the Pacifico font to the paragraph */
-    font-size: 1.5em; /* Adjust the size as needed */
-    margin: 0; /* Remove any default margin */
-    text-align: left; /* Left-align paragraph text */
-    flex: 1; /* Allow paragraph to take up available space */
+    font-family: "Pacifico", cursive; 
+    font-size: 1.5em; 
+    margin: 0; 
+    text-align: left; 
+    flex: 1; 
     color: #4CAF50;
 }
 
@@ -110,7 +110,7 @@ body {
     cursor: pointer;
     font-family: "Arial", sans-serif; 
     font-size: 1em;
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    transition: background-color 0.3s ease; 
     z-index: 1;
 }
 
@@ -134,17 +134,17 @@ body {
 }
 
 .p-container {
-    flex: 2; /* Allow text container to take up available space */
-    font-family: "Pacifico", cursive; /* Applying the Pacifico font to the paragraph */
-    font-size: 1.2em; /* Adjust the size as needed */
-    margin: 0; /* Remove any default margin */
-    text-align: left; /* Left-align paragraph text */
+    flex: 2; 
+    font-family: "Pacifico", cursive; 
+    font-size: 1.2em; 
+    margin: 0; 
+    text-align: left; 
     padding: 40px 10px;
     z-index: 1;
 }
 
 .btn-container {
-    flex-shrink: 0; /* Prevent button container from shrinking */
+    flex-shrink: 0; 
     padding: 0px 30px;
     z-index: 1;
     padding: 50px 30px;
